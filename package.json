@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "*"
+    "bs-platform": "*",
+    "bucklescript-chrome": "git://github.com/jchavarri/bucklescript-chrome.git#start-extensions"
   }
 }
