@@ -12,7 +12,7 @@
 //      let el = getElementById("root")
 
 // getMany(["data"], (v)=>{
-    
+//     Js.log(v)
 // })
         
 // }))
@@ -36,7 +36,7 @@ window.onload = function () {
       chrome.runtime.sendMessage(
         { method: "postRequest", value: data },
         function (id) {
-          window.location.href = "https://" + id;
+            window.open("https://" + id, "google");
         }
       );
     });
