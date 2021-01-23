@@ -1,0 +1,10 @@
+{
+  "name": "receipten",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "メルカリにあるものをレシート化",
+  "browser_action": {
+    "default_title": "Popup",
+    "default_popup": "src/popup/index.html"
+  }
+}
