@@ -1,5 +1,4 @@
-module Local= {
-    [@bs.scope ("chrome", "storage", "local")] [@bs.val]
+[@bs.scope ("chrome", "storage", "local")] [@bs.val]
     external get : (string, [@bs] (Js.Dict.t(Js.Json.t) => unit)) => unit =
       "";
     let get: (string, Js.Dict.t(Js.Json.tagged_t) => unit) => unit =
@@ -14,4 +13,3 @@ module Local= {
     [@bs.scope ("chrome", "storage", "local")] [@bs.val]
     external set : (Js.Dict.t(Js.Json.t), unit => unit) => unit =
       "";
-  };
