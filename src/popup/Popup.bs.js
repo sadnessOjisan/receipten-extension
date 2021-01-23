@@ -2,6 +2,10 @@
 'use strict';
 
 
-alert("hello");
+window.onload = (function () {
+    alert("aa");
+    alert("bb");
+    
+  });
 
 /*  Not a pure module */
