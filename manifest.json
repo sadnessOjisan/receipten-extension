@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "description": "メルカリにあるものをレシート化",
+  "content_scripts": [
+    {
+      "matches": ["https://www.mercari.com/jp/*"],
+      "js": ["./src/content/Content.bs.js"]
+    }
+  ],
+  "web_accessible_resources": ["*.png"],
   "browser_action": {
+    "default_icon": "./src/popup/barcode_reader.png",
     "default_title": "Popup",
     "default_popup": "src/popup/index.html"
   },
   "background": {
-    "scripts": ["./src/background/Background.bs.js"],
+    "scripts": ["src/background/Background.bs.js"],
     "persistent": true
   },
   "permissions": ["storage", "https://receipten-backend.vercel.app"]
