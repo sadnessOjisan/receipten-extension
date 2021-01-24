@@ -16,6 +16,22 @@ window.onload = (function () {
                           
                         }));
           }));
+    var btn = window.document.getElementById("create-receipt");
+    console.log(btn);
+    btn.addEventListener("click", (function (param) {
+            chrome.storage.local.get("data", (function (value) {
+                    var data = value.data;
+                    chrome.runtime.sendMessage({
+                          method: "postRequest",
+                          value: data
+                        }, (function (id) {
+                            window.open("https://receipten.web.app/#/item/" + id);
+                            
+                          }));
+                    
+                  }));
+            
+          }));
     
   });
 
