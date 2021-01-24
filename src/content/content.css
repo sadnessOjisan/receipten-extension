@@ -1,0 +1,4 @@
+* {
+  cursor: url("chrome-extension://__MSG_@@extension_id__/dist/barcode_reader.png"),
+    auto !important;
+}

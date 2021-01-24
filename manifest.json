@@ -6,13 +6,14 @@
   "content_scripts": [
     {
       "matches": ["https://www.mercari.com/jp/*"],
-      "js": ["./dist/content.bundle.js"]
+      "js": ["./dist/content.bundle.js"],
+      "css": ["./dist/content.css"]
     }
   ],
   "web_accessible_resources": ["*.png"],
   "browser_action": {
-    "default_icon": "./src/popup/barcode_reader.png",
-    "default_title": "Popup",
+    "default_icon": "./dist/barcode_reader.png",
+    "default_title": "receipten",
     "default_popup": "dist/index.html"
   },
   "background": {

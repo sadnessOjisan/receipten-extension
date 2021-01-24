@@ -64,31 +64,3 @@ setOnload(window, @bs.this ((_) => {
 
      })
 )
-
-// %%raw(`
-// window.onload = function () {
-//   const el = document.getElementById("tabnum");
-//   chrome.storage.local.get(["data"], function (value) {
-//     const data = value.data;
-//     data.forEach((d) => {
-//       const p = document.createElement("li");
-//       p.innerHTML = "<span>"  + d.itemName + "</span><span>" +d.itemPrice + "</span>";
-//       el.appendChild(p);
-//     });
-//   });
-
-//   const createReceiptButtonEl = document.getElementById("create-receipt");
-//   createReceiptButtonEl.addEventListener("click", () => {
-//     chrome.storage.local.get(["data"], function (value) {
-//       const data = value.data;
-//       chrome.runtime.sendMessage(
-//         { method: "postRequest", value: data },
-//         function (id) {
-//             window.open("https://" + id, "google");
-//         }
-//       );
-//     });
-//   });
-// };
-
-// `)

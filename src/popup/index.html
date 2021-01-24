@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <title>Webpack App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body {
+        width: 300px;
+        height: 800px;
+      }
+    </style>
   </head>
   <body>
-    hello
-    <p id="root"></p>
+    <div id="root"></div>
     <button id="create-receipt">レシートを作る</button>
-    <script src="Popup.bs.js" type="module"></script>
+    <script src="popup.bundle.js"></script>
   </body>
 </html>

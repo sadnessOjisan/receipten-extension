@@ -1,19 +1,20 @@
 {
-  "name": "rescript-project-template",
-  "version": "0.0.1",
+  "name": "receipten-extension",
+  "version": "1.0.0",
   "scripts": {
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w"
+    "start": "bsb -make-world -w",
+    "gen": "cp './src/content/content.css' dist/ && cp 'src/popup/index.html' dist/ && cp './src/popup/barcode_reader.png' dist/ && npx webpack"
   },
   "keywords": [
-    "rescript"
+    "rescript",
+    "chrome extension"
   ],
-  "author": "",
+  "author": "sadnessOjisan",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "*",
-    "bucklescript-chrome": "git://github.com/jchavarri/bucklescript-chrome.git#start-extensions"
+    "bs-platform": "*"
   },
   "dependencies": {
     "html-webpack-plugin": "^4.5.1",
