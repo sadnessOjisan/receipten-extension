@@ -4,7 +4,7 @@ Chrome Extension by ReScript.(only popup)
 
 ## how to install
 
-build chrome extension
+download from [here](https://github.com/sadnessOjisan/receipten-extension/releases/latest/download/dist.zip) or build chrome extension.
 
 ### local
 
